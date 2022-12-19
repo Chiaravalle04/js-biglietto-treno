@@ -26,7 +26,7 @@ document.getElementById('my_price').innerHTML = totalPrice + ' €';
 // Calcoliamo eventuali sconti 
 if (myAge < 18) {
 
-    totalPrice = totalPrice - (20 / 100);
+    totalPrice = totalPrice * 0.2;
     totalPrice = (totalPrice.toFixed(2));
     console.log('Prezzo scontato del 20%:',totalPrice);
     document.getElementById('my_price').innerHTML = totalPrice + ' €';
@@ -34,7 +34,7 @@ if (myAge < 18) {
 
 } else if (myAge > 65) {
 
-    totalPrice = totalPrice - (40 / 100);
+    totalPrice = totalPrice * 0.4;
     totalPrice = (totalPrice.toFixed(2));
     console.log('Prezzo scontato del 40%:',totalPrice);
     document.getElementById('my_price').innerHTML = totalPrice + ' €';
