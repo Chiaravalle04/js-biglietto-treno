@@ -6,12 +6,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
         <!--Style-->
         <link rel="stylesheet" href="css/style.css">
-        <title>Calcolo Biglietto Treno</title>
+        <title>Calcolo Prezzo Biglietto Treno</title>
     </head>
     <body>
-        
+
+        <header>
+
+            <h1>Calcolo Prezzo Biglietto Treno</h1>
+
+        </header>
+
+        <main>
+
+            <div class="container">
+
+                <div class="text">
+
+                    <h2>Km da percorrere:</h2>
+
+                    <p id="my_km" class="my_p"></p>
+    
+                    <h2>Età:</h2>
+    
+                    <p id="my_age" class="my_p"></p>
+    
+                    <h2>PREZZO DEL BIGLIETTO:</h2>
+    
+                    <p id="my_price" class="my_p green"></p>
+
+                </div>
+
+                <div class="wrn">
+
+                    <p id="warning"> <span class="bold-red">AVVISO:</span> I viaggiatori con età inferiore ai <span class="bold-red">18 anni </span> riceveranno uno sconto del <span class="bold-red">20%</span> sul prezzo del biglietto, invece, i viaggiatori <span class="bold-red">over 65</span> riceveranno uno sconto del <span class="bold-red">40%</span> .</p>
+
+                </div>
+
+            </div>
+
+        </main>
 
         <script type="text/javascript" src="js/scripts.js">
 
